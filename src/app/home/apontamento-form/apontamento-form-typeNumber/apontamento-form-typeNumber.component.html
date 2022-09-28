@@ -1,0 +1,25 @@
+<div class="container">
+  <label class="input-label">Insira o número de tipo:</label>
+  <div class="box">
+    <form class="example-form">
+      <div class="input-label-div">
+      </div>
+        <mat-form-field class="mat-form-field-wrapper" appearance="fill">
+        <mat-label>Número de Tipo</mat-label>
+        <input type="text"
+               placeholder="Digite"
+               matInput
+               [formControl]="myControl"
+               [matAutocomplete]="auto"
+               [ngModel]=""
+               >
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let partnumber of filteredPartnumbers | async" [value]="partnumber">
+            {{partnumber}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+    <button type="submit" class="next-button" (click)="validate(myControl)"></button>
+  </div>
+</div>

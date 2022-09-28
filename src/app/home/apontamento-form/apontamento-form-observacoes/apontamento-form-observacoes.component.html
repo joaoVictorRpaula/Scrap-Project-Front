@@ -1,0 +1,13 @@
+<div class="container">
+  <label class="input-label">Observações:</label>
+  <div class="box">
+    <form class="example-form">
+      <mat-form-field class="example-full" appearance="fill">
+        <mat-label>Opcional</mat-label>
+        <input [formControl]="observacoesControl" value="" matInput>
+      </mat-form-field>
+    </form>
+    <button type="submit" class="next-button" (click)="validate(observacoesControl)"></button>
+  </div>
+  <button class="back-button" (click)="lastPage()">Voltar</button>
+</div>

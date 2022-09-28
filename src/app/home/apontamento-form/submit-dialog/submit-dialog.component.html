@@ -1,0 +1,39 @@
+<div class="container">
+  <img src="../../../../assets/img/confirmation.png" >
+  <h1 mat-dialog-title>Confirmar apontamento?</h1>
+  <div class="info-box">
+    <div class="info-itens">
+      <h3>Edv:</h3>
+        <p>{{edv}}</p>
+    </div>
+    <div class="info-itens">
+      <h3>Número de tipo:</h3>
+        <p>{{partnumber}}</p>
+    </div>
+    <div class="info-itens">
+      <h3>Operação:</h3>
+        <p>{{operation}}</p>
+    </div>
+    <div class="info-itens">
+      <h3>Máquina:</h3>
+        <p>{{machine}}</p>
+    </div>
+    <div class="info-itens">
+      <h3>Defeito:</h3>
+        <p>{{defeito}}</p>
+    </div>
+    <div class="info-itens">
+      <h3>Quantidade:</h3>
+        <p>{{quantidade}}</p>
+    </div>
+    <div class="info-itens">
+      <h3>Observação:</h3>
+        <p>{{observacoes}}</p>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close (click)="cancel()">Cancelar</button>
+    <button mat-button mat-dialog-close cdkFocusInitial (click)="addApontamento()">Confirmar</button>
+  </div>
+</div>
+

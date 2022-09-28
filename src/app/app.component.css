@@ -1,0 +1,31 @@
+h2{
+  font-size:1.3em;
+}
+.banner-bosch{
+  width: 100%;
+  height: 16px;
+}
+
+.header-bosch{
+  margin-top: 5px;
+  padding: 10px;
+  display: flex;
+  background-color: #f8f8f8;
+  border: 1px solid transparent;
+  align-items: center;
+}
+
+.header-div-bosch-img{
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.header-bosch-title{
+  display: flex;
+  align-items: center;
+}
+
+.header-bosch-title-title{
+  margin-left: 15px;
+}
+

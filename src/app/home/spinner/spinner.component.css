@@ -1,0 +1,16 @@
+.spinner{
+  left: 0 !important;
+  top: 0 !important;
+  z-index: 10000 !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: fixed !important;
+  background-color: rgba(0, 0, 0, 0.171) !important;
+  cursor: pointer !important;
+  visibility: visible !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: wait !important;
+}
+

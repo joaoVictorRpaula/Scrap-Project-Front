@@ -1,0 +1,62 @@
+<div class="nav-container">
+  <div class="line"></div>
+  <ul class="nav-tabs">
+    <li routerLink="typenumber" class="nav-itens">
+      <a routerLink="typenumber">
+        <span routerLinkActive="selected" class="circle-tab">
+          <img src="../../../assets/img/part.png">
+        </span>
+      </a>
+      <span routerLinkActive="selected" class="nav-itens-desc">Número de Tipo</span>
+    </li>
+    <li routerLink="operation" class="nav-itens">
+      <a routerLink="operation">
+        <span routerLinkActive="selected" class="circle-tab">
+          <img src="../../../assets/img/operation.png">
+        </span>
+      </a>
+      <span routerLinkActive="selected" class="nav-itens-desc">Operação</span>
+    </li>
+    <li routerLink="machine" class="nav-itens">
+      <a routerLink="machine">
+        <span routerLinkActive="selected" class="circle-tab">
+          <img src="../../../assets/img/machine.png">
+        </span>
+      </a>
+      <span routerLinkActive="selected" class="nav-itens-desc">Máquina</span>
+    </li>
+    <li routerLink="defeito" class="nav-itens">
+      <a routerLink="defeito">
+        <span routerLinkActive="selected" class="circle-tab">
+          <img src="../../../assets/img/defeito.png">
+        </span>
+      </a>
+      <span routerLinkActive="selected" class="nav-itens-desc">Defeito</span>
+    </li>
+    <li routerLink="quantidade" class="nav-itens">
+      <a routerLink="quantidade">
+        <span routerLinkActive="selected" class="circle-tab">
+          <img src="../../../assets/img/quantidade.png">
+        </span>
+      </a>
+      <span routerLinkActive="selected" class="nav-itens-desc">Quantidade</span>
+    </li>
+    <li routerLink="observacoes" class="nav-itens">
+      <a routerLink="observacoes">
+        <span routerLinkActive="selected" class="circle-tab">
+          <img src="../../../assets/img/observacao.png">
+        </span>
+      </a>
+      <span routerLinkActive="selected" class="nav-itens-desc">Observações</span>
+    </li>
+  </ul>
+</div>
+
+<div class="name-title-div">
+  <h1 class="name-title">Apontador:</h1>
+  <p class="name-user">{{user.nome}}</p>
+</div>
+
+<section class="input-component">
+  <router-outlet></router-outlet>
+</section>

@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 mat-dialog-title>Digite seu EDV:</h1>
+  <mat-form-field class="input-box" appearance="fill">
+    <mat-label>EDV</mat-label>
+    <input matInput [(ngModel)]="edv">
+  </mat-form-field>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close (click)="cancel()">Cancelar</button>
+    <button mat-button mat-dialog-close cdkFocusInitial (click)="searchEdv(edv)">Enviar</button>
+  </div>
+</div>

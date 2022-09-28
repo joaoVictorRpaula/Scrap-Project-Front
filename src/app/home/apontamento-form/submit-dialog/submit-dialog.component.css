@@ -1,0 +1,33 @@
+.container{
+  width: 400px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  width: 80px;
+  margin-left: 8px;
+  margin-bottom: 15px;
+}
+
+.info-box{
+  align-items: flex-start;
+}
+
+.info-itens{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p{
+  color: rgb(73 73 73);
+  font-size: 1em;
+  margin-left: 15px;
+}
+
+h3{
+  font-size: 1.1em;
+}

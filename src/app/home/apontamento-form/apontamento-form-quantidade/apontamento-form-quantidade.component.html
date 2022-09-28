@@ -1,0 +1,13 @@
+<div class="container">
+  <label class="input-label">Insira a quantidade:</label>
+  <div class="box">
+    <form class="example-form">
+      <mat-form-field class="example-full" appearance="fill">
+        <mat-label>Quantidade</mat-label>
+        <input [formControl]="quantidadeControl" matInput type="number" >
+      </mat-form-field>
+    </form>
+    <button type="submit" class="next-button" (click)="validate(quantidadeControl)"></button>
+  </div>
+  <button class="back-button" (click)="lastPage()">Voltar</button>
+</div>
